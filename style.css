@@ -1,0 +1,125 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background: linear-gradient(to right, #fff, #fde5e3);
+  margin: 0;
+  padding: 0;
+}
+
+.welcome-container {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  transform: translateY(-50%);
+  z-index: 1000;
+  max-width: 300px;
+  padding: 20px;
+}
+
+.welcome-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4d4f54;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: 3rem;
+  line-height: 1.2;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  position: relative;
+}
+
+.game {
+  max-width: 800px; /* Increased from 600px */
+  margin: 60px auto;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+}
+
+.avatar {
+  width: 200px; /* Bigger */
+  height: 200px;
+  margin: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #4d4f54;
+  background-color: #f1f1f1;
+}
+
+.score {
+  font-size: 3.5rem; /* Bigger text */
+  color: #4d4f54;
+  margin: 15px 0;
+}
+
+.vs {
+  font-size: 2rem;
+  margin: 15px 0;
+  font-weight: bold;
+  color: #4d4f54;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.choices img {
+  width: 100px; /* Bigger choice buttons */
+  height: 100px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 3px solid transparent;
+  background-color: #fff;
+}
+
+.choices img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  border-color: #f7bdb7;
+}
+
+.player-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 50px;
+}
+
+.player-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4d4f54;
+  padding: 5px 0;
+  transition: all 0.3s ease;
+  position: absolute;
+  left: 20px;
+}
+
+.label:hover {
+  transform: translateY(-2px);
+}
+
+.robot-label {
+  color: #4d4f54;
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.player-label {
+  color: #4d4f54;
+  top: 60%;
+  transform: translateY(-50%);
+}
